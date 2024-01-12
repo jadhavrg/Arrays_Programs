@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Scanner;
 
-// WAJP to rotate an array based on user index(right shift).
+// WAJP to rotate an array based on user index(left shift).
 public class RotateArray1 
 {
 	public static void main(String[] args) 

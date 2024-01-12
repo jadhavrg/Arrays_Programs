@@ -1,7 +1,5 @@
 package arrays;
 
-import java.util.Arrays;
-
 // WAJP to find second max element from an array.
 public class SecondMax 
 {

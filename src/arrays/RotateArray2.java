@@ -3,7 +3,7 @@ package arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//WAJP to rotate an array based on user index(left shift).
+//WAJP to rotate an array based on user index(right shift).
 public class RotateArray2 
 {
 	public static void main(String[] args) 
@@ -15,14 +15,22 @@ public class RotateArray2
 		System.out.println("Enter the index : ");
 		int index = scanner.nextInt() ;
 		
-		for(int i=0; i<index; i++)
+//		for(int i=0; i<index; i++)
+//		{
+//			int last = arr[0] ;
+//			for(int j=0; j<arr.length-1; j++)
+//			{
+//				arr[j] = arr[j+1] ;
+//			}
+//			arr[arr.length-1] = last ;
+//		}
+		
+		for(int i=0; i<arr.length-index; i++)
 		{
-			int last = arr[0] ;
-			for(int j=0; j<arr.length-1; j++)
+			for(int j=0; j<arr.length; j++)
 			{
-				arr[j] = arr[j+1] ;
+				arr[j] = arr[arr.length-1] ;
 			}
-			arr[arr.length-1] = last ;
 		}
 		
 		System.out.println("After Rotation :"+Arrays.toString(arr));

@@ -19,7 +19,7 @@ public class FindVowels
 		}
 		System.out.println("The Array: " + Arrays.toString(ch));
 		
-		char [] vowelsArr = new char [4] ;
+		char [] vowelsArr = new char [3] ;
 		int index = 0 ;
 		for(char i=0; i<ch.length; i++)
 		{
